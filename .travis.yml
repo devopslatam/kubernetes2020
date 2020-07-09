@@ -17,4 +17,4 @@ jobs:
       - curl localhost:80
       - docker stop test
       - docker rm test
-      - docker rmi dotnetsample
+      - docker rmi $DOCKER_USERNAME/dotnetsample
