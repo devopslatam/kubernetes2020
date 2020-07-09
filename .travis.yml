@@ -15,6 +15,7 @@ jobs:
       - docker rm test
       - docker rmi $DOCKER_USERNAME/dotnetsample
     - stage: publish image
+      script:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       - docker build -t dotnetsample sample/.
       - docker images
