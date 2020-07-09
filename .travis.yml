@@ -13,6 +13,7 @@ jobs:
       script: 
       - "echo here you can run the tests!"
       - docker run -d --name test -p 80:80 $DOCKER_USERNAME/dotnetsample
+      - sleep 10
       - curl localhost:80
       - docker stop test
       - docker rm test
