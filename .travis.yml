@@ -10,9 +10,10 @@ jobs:
       - docker tag dotnetsample $DOCKER_USERNAME/dotnetsample
       - docker push $DOCKER_USERNAME/dotnetsample
     - stage: test
-      script: "echo here you can run the tests!"
-      script: docker run -d --name test -p 80:80 dotnetsample
-      script: curl localhost:80
-    - script: docker stop name
-    - script: docker rm test
-    - script: docker rmi dotnetsample
+      script: 
+      - "echo here you can run the tests!"
+      - docker run -d --name test -p 80:80 $DOCKER_USERNAME/dotnetsample
+      - curl localhost:80
+      - docker stop test
+      - docker rm test
+      - docker rmi dotnetsample
