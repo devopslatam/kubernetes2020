@@ -1,0 +1,18 @@
+dist: trusty
+
+jobs:
+  include:
+    - stage: build docker image
+      script:
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - docker build -t dotnetsample .
+      - docker images
+      - docker tag dotnetsample $DOCKER_USERNAME/dotnetsample
+      - docker push $DOCKER_USERNAME/dotnetsample
+    - stage: test
+      script: "echo here you can run the tests!"
+      script: docker run -d --name test -p 80:80 dotnetsample
+      script: curl localhost:80
+    - script: docker stop name
+    - script: docker rm test
+    - script: docker rmi dotnetsample
