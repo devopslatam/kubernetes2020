@@ -14,3 +14,18 @@
    - Group 4: Modify .travis.yaml to build and publish every new image.
 
    
+## Git Commands ##
+
+- To clone a repository
+  `git clone <repository-url`
+
+- To add a files to a commit
+  ` git add . | git add <files>`
+
+- To commit with a commit message
+
+  `git commit -m "message"`
+
+- To push a change
+
+  `git push`
