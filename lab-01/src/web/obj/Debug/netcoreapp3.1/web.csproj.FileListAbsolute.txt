@@ -1,0 +1,5 @@
+/home/jcorrea/src/kubernetes2020/lab-01/src/web/obj/Debug/netcoreapp3.1/web.csprojAssemblyReference.cache
+/home/jcorrea/src/kubernetes2020/lab-01/src/web/obj/Debug/netcoreapp3.1/web.AssemblyInfoInputs.cache
+/home/jcorrea/src/kubernetes2020/lab-01/src/web/obj/Debug/netcoreapp3.1/web.AssemblyInfo.cs
+/home/jcorrea/src/kubernetes2020/lab-01/src/web/obj/Debug/netcoreapp3.1/web.csproj.CoreCompileInputs.cache
+/home/jcorrea/src/kubernetes2020/lab-01/src/web/obj/Debug/netcoreapp3.1/web.MvcApplicationPartsAssemblyInfo.cache

@@ -1,7 +1,6 @@
 # Lab - Containerization
 
 
-
 1. Clone the repo 
 
 2. Use your IDE and understand what the Code does.
@@ -16,6 +15,9 @@
    
 ## Git Commands ##
 
+<details>
+  <summary>Click to expand</summary>
+
 - To clone a repository
   `git clone <repository-url`
 
@@ -29,3 +31,5 @@
 - To push a change
 
   `git push`
+
+</details>
